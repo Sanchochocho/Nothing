@@ -1,0 +1,67 @@
+body {
+    overflow: hidden;
+    background-color: rgb(255, 255, 64);
+}
+
+.stickers img {
+    width: 40px;
+    height: 40px;
+}
+
+.stickers {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rate {
+    align-items: center;
+    accent-color: rgb(0, 0, 0);
+}
+
+#text {
+    font-size: 40px;
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#change_mood {
+    width: 300px;
+}
+
+.check {
+    width: 150px;
+    height: 40px;
+    background-color: yellow;
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.check:active{
+    background-color: rgb(143, 143, 1);
+}
+
+@media (max-width: 620px) {
+    .main {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .check {
+        margin: 0px;
+    }
+
+    #text {
+        margin: 0px;
+    }
+}
